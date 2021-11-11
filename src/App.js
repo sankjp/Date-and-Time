@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
+  const name="santanu banerjee";
+  const currentDate=new Date().toLocaleDateString();
+  const currentTime=new Date().toLocaleTimeString();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>My name is {name}</h1>
+      <p>Current date is:{currentDate}</p>
+      <p>Current time is:{currentTime}</p>
     </div>
   );
 }
